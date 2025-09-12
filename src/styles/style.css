@@ -8,7 +8,16 @@ body {
   font-family: sans-serif;
   background-color: #edece7;
 }
-
+.hr-line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.hero2 {
+  background-color: #252525;
+}
 section {
   padding: 2rem;
 }
@@ -19,7 +28,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-hr {
+.header-hr {
   top: 60px;
   display: flex;
   background-color: #edece7;
@@ -82,11 +91,17 @@ nav.active .menu a {
 h1 {
   margin-bottom: 2rem;
 }
-
 h2 {
-  margin-bottom: 1rem;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  color: #2f6d4f;
+  font-family: "Anton", "Oswald", sans-serif;
+  font-size: 40px;
 }
-
+h3 {
+  padding-bottom: 10px;
+  color: white;
+}
 p {
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
@@ -109,7 +124,9 @@ img {
   flex-direction: column;
   gap: 2rem;
 }
-
+.hero2 {
+  background-color: #252525;
+}
 @media (min-width: 900px) {
   .grid_3_1f {
     display: grid;

@@ -5,9 +5,25 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <a class="logo" href="/"><img src="public/imgs/CRTVlogo.svg" alt=""></a> 
+    <a class="logo" href="/"><img src="public/imgs/CRTVlogo.svg" alt="logo af CRTV"></a> 
     <input class="textbox" type="text" placeholder="Search..">
 </nav>
- <hr>
+ <hr class="header-hr">
 
 </div>
+<script>
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
+
+burger.addEventListener("click", burgerClick);
+function burgerClick() {
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
+}
+menu.addEventListener("click", menuClick);
+function menuClick() {
+  burger.classList.remove("active");
+  nav.classList.remove("active");
+}
+</script>
