@@ -1,9 +1,28 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<PageLayout title="About">
-  <header>
-    <h1>Om Siden</h1>
-  </header>
+<PageLayout title="Fjerde Eksempel">
+
+
+  <section class="hero1">
+    <div class="grid_1_1f_1_2fr">
+      <div class="flex_one_column">
+        <Card img="/imgs/graffiti01.webp" tag="Local CRTV" text="Lorem ipsum, dolor sit amet consectetur" link="/content/localcrtv" />
+        <Card img="/imgs/graffiti02.webp" tag="Global CRTV" text="Dolor sit amet consectetur Lorem ipsum" />
+        <Card img="/imgs/graffiti03.webp" tag="Hidden Free Gem" text="Qui et debitis sit illum consequatur" />
+      </div>
+      <Card variant="featured" img="/imgs/graffiti02.webp" tag="Global CRTV" text="Dolor sit amet consectetur Lorem ipsum" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Kort sektion</h2>
+    <div class="grid_3_1f">
+      <Card img="/imgs/graffiti01.webp" tag="Local CRTV" text="Lorem ipsum, dolor sit amet consectetur" />
+      <Card img="/imgs/graffiti02.webp" tag="Global CRTV" text="Dolor sit amet consectetur Lorem ipsum" />
+      <Card img="/imgs/graffiti03.webp" tag="Hidden Free Gem" text="Qui et debitis sit illum consequatur" />
+    </div>
+  </section>
 </PageLayout>
