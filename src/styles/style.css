@@ -101,6 +101,7 @@ h2 {
 h3 {
   padding-bottom: 10px;
   color: white;
+  font-size: large;
 }
 p {
   margin-bottom: 0.5rem;
@@ -131,12 +132,33 @@ img {
   .grid_3_1f {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 5rem;
   }
 
   .grid_1_1f_1_2fr {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    gap: 5rem;
+  }
+  .grid_2-1fr {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5rem;
+    padding-top: 50px;
+  }
+  h4 {
+    font-size: large;
+  }
+  h5 {
+    font-size: x-large;
+    padding-bottom: 40px;
+  }
+  .hr-line2 {
+    width: 100%;
+    height: 2px;
+    background-color: #8c8c8c;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    transition: 0.2s linear;
   }
 }
