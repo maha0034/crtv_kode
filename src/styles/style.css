@@ -230,6 +230,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+    color: white;
   }
 
   .grid_1_1f_1_2fr {
