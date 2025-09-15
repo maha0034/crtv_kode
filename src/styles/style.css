@@ -304,7 +304,6 @@ img {
     animation: move-left-to-right linear 12.5s infinite;
   }
 
-  /* use this one to move from left to right direction */
   @keyframes move-left-to-right {
     from {
       transform: translateX(-50%);
