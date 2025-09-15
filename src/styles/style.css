@@ -3,8 +3,27 @@
   margin: 0;
   padding: 0;
 }
+#bgVideo {
+  display: flex;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  min-width: 100%;
+  width: 440px;
+  padding: 50px;
+}
 #crtv-logo {
   width: auto;
+}
+.knap {
+  display: flex;
+  width: 20%;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.knap:hover {
+  transform: scale(110%);
 }
 body {
   font-family: sans-serif;
@@ -26,6 +45,8 @@ section {
 
 h1 {
   margin-bottom: 2rem;
+  font-family: "Anton", "Oswald", sans-serif;
+  font-size: 60px;
 }
 h2 {
   padding-top: 30px;
@@ -38,6 +59,7 @@ h3 {
   padding-bottom: 10px;
   color: white;
   font-size: large;
+  font-family: "Anton", "Oswald", sans-serif;
 }
 p {
   margin-bottom: 0.5rem;
@@ -112,19 +134,34 @@ img {
 .menu {
   display: none;
 }
+.billede1-artikel1 {
+  padding: 200px;
+}
 .menubaren {
+  background-image: url(../../public/imgs/baggrundbilled.png);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0 30px;
-  height: 80px;
-  background-color: transparent; /* helt gennemsigtig */
-  position: relative; /* så den ligger inde i hero */
+  height: 120px;
+  background-color: transparent;
+  position: relative;
   color: white;
-  z-index: 2; /* ovenpå billedet */
+  z-index: 2;
+}
+.artikel-tekst {
+  padding-inline: 250px;
+  padding-bottom: 25px;
+  font-size: large;
 }
 
 @media (min-width: 900px) {
+  h1 {
+    text-align: center;
+    color: #2f6d4f;
+  }
+  .h2-artikel {
+    text-align: center;
+  }
   #crtv-logo {
     width: auto;
   }
@@ -159,7 +196,6 @@ img {
 
   nav {
     display: flex;
-    align-items: center;
   }
 
   .menu {
@@ -183,11 +219,10 @@ img {
 
   .menu a {
     display: block;
-    padding: 10px;
-
     text-decoration: none;
     transition: color 0.3s;
     text-align: end;
+    color: white;
   }
 
   .menu a:hover {
@@ -217,6 +252,8 @@ img {
   h5 {
     font-size: x-large;
     padding-bottom: 40px;
+    text-align: center;
+    font-family: "Anton", "Oswald", sans-serif;
   }
   .hr-line2 {
     width: 100%;
@@ -307,5 +344,11 @@ img {
     justify-content: center;
     gap: 1rem;
     padding-top: 50px;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
   }
 }
