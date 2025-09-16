@@ -348,4 +348,10 @@ img {
     gap: 20px;
     padding: 20px;
   }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 200px;
+    gap: 30px;
+  }
 }
