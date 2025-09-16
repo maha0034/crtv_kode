@@ -194,6 +194,7 @@ nav.active .menu {
     gap: 20px;
     background: none;
     box-shadow: none;
+    padding: 0;
   }
 
   .menu li {
