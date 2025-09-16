@@ -130,12 +130,18 @@ img {
 }
 .menu {
   display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
 }
-.billede1-artikel1 {
-  padding: 200px;
+.menu a {
+  color: black;
+  font-size: xx-large;
+  font-family: "Anton", "Oswald", sans-serif;
 }
+
 .menubaren {
-  background-image: url(../../public/imgs/baggrundbilled.png);
+  background-image: url(../../imgs/baggrundbilled.png);
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
@@ -145,16 +151,34 @@ img {
   color: white;
   z-index: 2;
 }
-.artikel-tekst {
-  padding-inline: 250px;
-  padding-bottom: 25px;
-  font-size: large;
-}
 
+.marquee-section {
+  display: none;
+}
+.footer {
+  background-color: #252525;
+}
+#p-hvid {
+  color: white;
+}
+h1 {
+  text-align: center;
+  color: #2f6d4f;
+}
+.artikel-tekst {
+  padding: 10px;
+}
+nav.active .menu {
+  display: flex;
+}
 @media (min-width: 900px) {
-  h1 {
-    text-align: center;
-    color: #2f6d4f;
+  .artikel-tekst {
+    padding-inline: 250px;
+    padding-bottom: 25px;
+    font-size: large;
+  }
+  .billede1-artikel1 {
+    padding: 200px;
   }
   .h2-artikel {
     text-align: center;
@@ -163,63 +187,27 @@ img {
     width: auto;
   }
   .menu {
-    display: block;
-    display: flex;
-    list-style: none;
+    flex-direction: row;
+    display: flex !important;
+    position: static;
+    flex-direction: row;
     gap: 20px;
+    background: none;
+    box-shadow: none;
   }
+
+  .menu li {
+    border: none;
+  }
+
   .burger {
     display: none;
   }
 
-  nav.active .menu {
-    display: block;
-    background-color: #ffffff;
-    position: absolute;
-    top: 94px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
-  nav.active .menu a {
-    font-size: 24px;
-  }
-
-  nav {
-    display: flex;
-  }
-
-  .menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
-
-  .menu li {
-    margin-right: 20px;
-    color: white;
-    font-family: "Anton", "Oswald", sans-serif;
-    font-size: xx-large;
-  }
-
-  .menu li:last-child {
-    margin-right: 0;
-  }
-
   .menu a {
-    display: block;
-    text-decoration: none;
-    transition: color 0.3s;
-    text-align: end;
     color: white;
+    font-size: xx-large;
+    font-family: "Anton", "Oswald", sans-serif;
   }
 
   .menu a:hover {
@@ -274,9 +262,7 @@ img {
     gap: 15px;
     padding-top: 10px;
   }
-  .footer {
-    background-color: #252525;
-  }
+
   h6 {
     padding-bottom: 15px;
     color: white;
@@ -286,6 +272,7 @@ img {
   .marquee-section {
     position: relative;
     min-height: 82px;
+    display: block;
   }
 
   .marquee-section,
@@ -333,9 +320,7 @@ img {
     margin-top: 50px;
     gap: 20px;
   }
-  #p-hvid {
-    color: white;
-  }
+
   .icons {
     display: flex;
     justify-content: center;
