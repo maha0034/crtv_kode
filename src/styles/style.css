@@ -171,6 +171,9 @@ h1 {
 nav.active .menu {
   display: flex;
 }
+.grid_3_1f {
+  color: white;
+}
 @media (min-width: 900px) {
   .artikel-tekst {
     padding-inline: 250px;
@@ -187,6 +190,7 @@ nav.active .menu {
     width: auto;
   }
   .menu {
+    list-style: none;
     flex-direction: row;
     display: flex !important;
     position: static;
@@ -209,6 +213,7 @@ nav.active .menu {
     color: white;
     font-size: xx-large;
     font-family: "Anton", "Oswald", sans-serif;
+    text-decoration: none;
   }
 
   .menu a:hover {
